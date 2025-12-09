@@ -1,0 +1,77 @@
+/* shared.css */
+/* Very basic styles, dark purple + neon green concert vibe */
+
+:root{
+    --dark-bg: #0a0612;
+    --panel: #151021;
+    --purple: #a38bff;
+    --green: #6dff9b;
+    --text-light: #d3d3d3;
+    --max-width: 1100px;
+}
+
+body{
+    background: var(--dark-bg);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text-light);
+}
+
+/* page container */
+.site-wrapper{
+    width: var(--max-width);
+    margin: 30px auto;
+    background: var(--panel);
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* HEADER */
+.site-header{
+    background: #120d1c;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #2e2541;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left img{
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.header-title{
+    color: var(--purple);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav a{
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 8px;
+}
+
+.nav a:hover{
+    color: white;
+    background: #1f172f;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.site-footer{
+    background: #120d1c;
+    padding: 15px 25px;
+    font-size: 13px;
+    color: #b9b9b9;
+    border-top: 1px solid #2e2541;
+}

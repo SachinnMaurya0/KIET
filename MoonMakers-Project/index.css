@@ -1,0 +1,207 @@
+/* index.css */
+
+.home-content{
+    padding: 25px;
+    text-align: center;
+}
+
+/* Hero Section Background with Overlay */
+.hero-section{
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 25px;
+
+    /* Background image */
+    background-image: url("Assets/images/band-hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Dark overlay */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* dark transparent overlay */
+    background: rgba(0, 0, 0, 0.55);
+
+    /* place behind text */
+    z-index: 0;
+}
+
+/* Ensures text stays above overlay */
+.hero-section *{
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Title and tagline */
+h1{
+    color: var(--purple);
+    margin-bottom: 5px;
+}
+
+.tagline{
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.cta{
+    color: var(--green);
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Button */
+#play-btn{
+    background: var(--green);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#play-btn:hover{
+    background: #4df08a;
+}
+
+/* Sections */
+.home-section{
+    background: #120d1c;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.home-section h2{
+    color: var(--purple);
+    margin: 0 0 10px 0;
+}
+
+/* Full-width horizontal merch preview */
+.merch-row{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.merch-row a{
+    flex: 1;             /* each item takes equal width */
+}
+
+.merch-img{
+    width: 100%;         /* fill available column width */
+    height: 200px;       /* choose any height */
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #20172f;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.merch-img:hover{
+    transform: scale(1.03);
+    border-color: var(--purple);
+}
+
+
+/* Centered section buttons */
+.section-btn{
+    display: block;
+    width: 200px;                   /* fixed simple width */
+    margin: 15px auto 0 auto;       /* center horizontally */
+    text-align: center;
+
+    background: #1e172b;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 600;
+}
+
+.section-btn:hover{
+    background: #2b2040;
+    color: white;
+    border-color: rgba(255,255,255,0.15);
+}
+
+
+/* Gallery thumbnails */
+.gallery-preview{
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-preview img{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Simple link buttons */
+.simple-link{
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.simple-link:hover{
+    text-decoration: underline;
+}
+
+/* --- existing index.css content above --- */
+
+/* Full-width carousel */
+.carousel{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.carousel img{
+    width: 100%;          /* full width of the section */
+    height: 300px;        /* choose any height you like */
+    object-fit: cover;    /* crop elegantly to fill area */
+    border-radius: 6px;
+    border: 2px solid #20172f;
+    display: block;
+}
+
+/* Buttons BELOW the image */
+.carousel-controls{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel-btn{
+    background: transparent;
+    color: var(--text-light);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.carousel-btn:hover{
+    background: #1f172f;
+    color: white;
+}

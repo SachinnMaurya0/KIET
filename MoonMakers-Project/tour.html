@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Moon Makers — Tour</title>
+  <meta name="viewport" content="width=1100"> <!-- desktop only -->
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="tour.css"> <!-- page CSS (I'll send when you ask) -->
+</head>
+
+<body>
+  <div class="site-wrapper">
+
+    <!-- header injected by shared.js -->
+    <div id="site-header"></div>
+
+    <main style="padding:22px;">
+
+      <!-- Hero -->
+      <section style="margin-bottom:18px;">
+        <h1 style="color:#a38bff; margin:0 0 6px 0;">Tour</h1>
+        <p style="color:#d3d3d3; margin:0;">See where we'll be next — click a ticket button to reserve.</p>
+      </section>
+
+      <!-- Tour list (simple rows easy to explain) -->
+      <section class="tour-list" style="background:#120d1c; padding:16px; border-radius:6px;">
+        <!-- header row -->
+        <div class="tour-row" style="display:flex; gap:16px; padding:10px 8px; font-weight:700; color:#bfb8d6;">
+          <div style="flex:1;">Date</div>
+          <div style="flex:2;">Venue</div>
+          <div style="flex:1;">City</div>
+          <div style="flex:1; text-align:center;">Tickets</div>
+        </div>
+
+        <!-- example rows - replace with real dates if needed -->
+        <div class="tour-row"
+          style="display:flex; gap:16px; align-items:center; padding:12px 8px; border-top:1px solid rgba(255,255,255,0.02);">
+          <div style="flex:1;">16 Dec 2025</div>
+          <div style="flex:2;">The Neon Dome</div>
+          <div style="flex:1;">Mumbai</div>
+          <div style="flex:1; text-align:center;">
+            <a class="ticket-btn" href="auth.html">Buy</a>
+          </div>
+        </div>
+
+        <div class="tour-row"
+          style="display:flex; gap:16px; align-items:center; padding:12px 8px; border-top:1px solid rgba(255,255,255,0.02);">
+          <div style="flex:1;">23 Dec 2025</div>
+          <div style="flex:2;">Lunar Hall</div>
+          <div style="flex:1;">Pune</div>
+          <div style="flex:1; text-align:center;">
+            <a class="ticket-btn" href="auth.html">Buy</a>
+          </div>
+        </div>
+
+        <div class="tour-row"
+          style="display:flex; gap:16px; align-items:center; padding:12px 8px; border-top:1px solid rgba(255,255,255,0.02);">
+          <div style="flex:1;">05 Jan 2026</div>
+          <div style="flex:2;">Skyline Park</div>
+          <div style="flex:1;">Bangalore</div>
+          <div style="flex:1; text-align:center;">
+            <a class="ticket-btn" href="auth.html">Buy</a>
+          </div>
+        </div>
+
+        <!-- add more rows as needed -->
+      </section>
+
+      <!-- Small note / CTA -->
+      <section style="margin-top: 18px; text-align: center;">
+        <a href="index.html" class="section-btn">Back to Home</a>
+      </section>
+
+
+    </main>
+
+    <!-- footer injected by shared.js -->
+    <div id="site-footer"></div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="tour.js"></script> <!-- optional page JS; I'll send only if you want it -->
+</body>
+
+</html>

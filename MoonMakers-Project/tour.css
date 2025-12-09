@@ -1,0 +1,60 @@
+/* tour.css */
+/* Simple desktop-only styling for the Tour page */
+
+:root{
+    --purple: #a38bff;
+    --green: #6dff9b;
+    --text-light: #d3d3d3;
+}
+
+/* Tour rows */
+.tour-list{
+    background: #120d1c;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.tour-row{
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+/* Ticket button */
+.ticket-btn{
+    display: inline-block;
+    padding: 8px 14px;
+    background: #1e172b;
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.ticket-btn:hover{
+    background: #2b2040;
+    border-color: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.section-btn{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 15px auto 0 auto;
+
+    background: #1e172b;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 600;
+}
+
+.section-btn:hover{
+    background: #2b2040;
+    color: white;
+    border-color: rgba(255,255,255,0.15);
+}

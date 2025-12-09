@@ -1,0 +1,86 @@
+/* auth.css */
+/* Simple styling for login / signup page */
+
+:root{
+    --purple: #a38bff;
+    --green: #6dff9b;
+    --text-light: #d3d3d3;
+}
+
+/* Tabs */
+.auth-tab{
+    flex: 1;
+    background: #1e172b;
+    color: var(--text-light);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.auth-tab:hover{
+    background: #2b2040;
+}
+
+.auth-tab.active{
+    background: #2b2040;
+    border-color: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+/* Form layout */
+.auth-form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.auth-label{
+    color: var(--text-light);
+    margin: 10px 0 4px 0;
+    font-size: 14px;
+}
+
+/* Input fields */
+.auth-input{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: #1e172b;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+.auth-input:focus{
+    outline: none;
+    border-color: var(--purple);
+    background: #241b36;
+}
+
+/* Info text */
+.small-muted{
+    color: #bfb8d6;
+    font-size: 13px;
+}
+
+.section-btn{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 15px auto 0 auto;
+
+    background: #1e172b;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-weight: 600;
+}
+
+.section-btn:hover{
+    background: #2b2040;
+    color: white;
+    border-color: rgba(255,255,255,0.15);
+}
